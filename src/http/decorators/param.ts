@@ -1,6 +1,5 @@
 import { Request } from 'express';
 import * as url from 'url';
-import { Converter } from './param';
 
 export class Param {
     private static readonly paramsResolversSymbol = Symbol('params');

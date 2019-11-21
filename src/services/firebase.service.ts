@@ -16,7 +16,7 @@ export class FirebaseService {
     async verifyToken(token: string) {
         const decoded = await admin.auth().verifyIdToken(token);
         if (decoded.firebase.sign_in_provider === 'password') {
-            if (decoded.uid !== 'SaZLefUTKJYSPTbb2PrZRsU0Sr33') {
+            if (decoded.uid !== 'eldT9PZot8eGSVP0Yd8EbFQSA4f2') {
                 throw new Error('Only test user can login with e-mail/password');
             }
         }

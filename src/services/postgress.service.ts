@@ -6,7 +6,7 @@ export class PostgressService {
 
     private pool = new Pool({
         connectionString: postgressConnectionString,
-        ssl: true,
+        ssl: false,
         max: 5,
         idleTimeoutMillis: 4 * this.HOUR,
         connectionTimeoutMillis: 2000,
