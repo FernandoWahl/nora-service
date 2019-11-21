@@ -14,6 +14,7 @@
     "copyhtml": "cp src/http/controllers/*.html build/http/controllers/",
     "heroku-postbuild": "npm run build && npm run copyhtml && npm run schema",
     "start": "node build/index.js",
+    "build-start": "npm run build && npm run copyhtml && npm run schema && npm run start",
     "lint": "tslint --project .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
